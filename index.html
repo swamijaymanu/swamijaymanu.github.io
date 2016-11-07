@@ -1,119 +1,25 @@
 <!DOCTYPE html>
-<!-- saved from url=(0028)http://aum.humaniverzita.cz/ -->
-<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Společenské meditace - Humaniverzita v ČR</title>
     <link href="./src/css.css" rel="stylesheet">
+    <link href="./src/mystyle.css" rel="stylesheet">
 
     <script src="./src/modernizr"></script>
+    <script src="./src/jquery"></script>
+    <script src="./src/bootstrap"></script>
 
-    <style>
-        a {
-            color: #fe8c16;
-        }
-        a:hover {
-            color: #bf1a2c;
-        }
-        button.mybtn{
-            color: white;
-            background-color: #fe8c16;
-            border-color: #ee8c16;
-        }
-        button.mybtn:hover{
-            color: white;
-            background-color: #ffac26;
-            border-color: #ffac26;
-        }
-        h1,
-        h2,
-        h3 {
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-size:32px;
-        }
-        h2 {
-            font-size: 26px;
-        }
-        h3 {
-            font-size: 18px;
-        }
-        p.bold {
-            font-weight: bold;
-        }
-        p.citation {
-            font-style: italic;
-        }
-        .nav .nav-divider {
-            background-color: #464646
-        }
-        img.personal-photo {
-            padding: 0px;
-            margin-left: 5px;
-            margin-bottom: 5px;
-            display: block;
-            float:right;
-        }
-        .center-cropped {
-            background-position: center center;
-            background-repeat: no-repeat;
-            overflow: hidden;
-        }
-        .basic-text-padding {
-            padding: 7px;
-        }
-
-        .flex-footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-content:center;
-            align-self: center;
-        }
-        body {
-            color: #330103;
-        }
-        .letter-colored {
-            color: #c01c2d;
-        }
-
-    </style>
+    <script>
+        $(function(){
+            $("#includeMenu").load("./shared/menu.html");
+        });
+    </script>
 </head>
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" style="max-width:700px; align-self:center; margin:auto">
-    <div class="container" style="max-width:700px">
-        <div class="navbar-header" style="margin-left:2px">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="http://aum.humaniverzita.cz/">
+<div id="includeMenu"></div>
 
-                Společenské meditace</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="http://aum.humaniverzita.cz/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Meditace <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="http://aum.humaniverzita.cz/aum">AUM meditace</a></li>
-                        <li><a href="http://aum.humaniverzita.cz/flushing">Flushing</a></li>
 
-                    </ul>
-                </li>
-                <li><a href="http://aum.humaniverzita.cz/actions">Akce</a></li>
-
-                <li class="nav-divider"> </li>
-
-                <li><a href="http://aum.humaniverzita.cz/about">O nás</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
 <div class="container body-content" style="padding:0">
     <div style="max-width:700px; width:auto; margin:0 auto">
 
@@ -190,9 +96,6 @@
 
 </div>
 
-<script src="./src/jquery"></script>
-
-<script src="./src/bootstrap"></script>
 
 
 

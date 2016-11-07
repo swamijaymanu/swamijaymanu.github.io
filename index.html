@@ -14,16 +14,16 @@
         $(function(){
             $("#includeMenu").load("./shared/menu.html");
         });
+        $(function(){
+            $("#includeFooter").load("./shared/footer.html");
+        });
     </script>
 </head>
 <body>
 <div id="includeMenu"></div>
+<div class="container body-content" style="padding:0; max-width:700px; width:auto; margin:0 auto">
 
-
-<div class="container body-content" style="padding:0">
-    <div style="max-width:700px; width:auto; margin:0 auto">
-
-
+        <!--custom site...-->
         <div style="width:100%; max-width:700px; overflow:hidden">
             <img style="align-self:center; margin:0px; float:none; max-width:700px; padding:0px; padding-top:0px; padding-bottom:0px" src="./src/party.png">
         </div>
@@ -36,18 +36,8 @@
                 <h3 style="margin-top:-7px; margin-bottom:20px">aktivní meditace se&nbsp;společenským&nbsp;rozměrem</h3>
             </div>
 
-
-
-
-
-
-
-
-
             <p style="padding-bottom:10px">
-
-
-                Meditace je způsob, jak se dostat do přítomnosti s&nbsp;plným vědomím.
+                 Meditace je způsob, jak se dostat do přítomnosti s&nbsp;plným vědomím.
                 Při společenských meditacích se setkáváme s&nbsp;druhými, tančíme a&nbsp;vyjadřujeme se.
                 Tyto aktivity vyživují naše tělo i&nbsp;mysl a&nbsp;přirozeně nás vedou do prostoru klidu a&nbsp;meditace.
 
@@ -74,31 +64,7 @@
 
         </div>
 
-        <hr>
-        <footer>
-
-
-            <div class="flex-footer-container" style="margin:auto; max-width:290px; margin-top:-12px">
-                <div style="align-self:center; margin:auto; padding-left:10px; padding-right:10px">
-                    Manu&nbsp;-&nbsp;774&nbsp;672&nbsp;131
-                </div>
-                <div style="align-self:center; margin:auto; padding-left:10px; padding-right:10px">
-                    Matěj&nbsp;-&nbsp;775&nbsp;326&nbsp;070
-                </div>
-            </div>
-            <div class="flex-footer-container" style="margin:auto">
-                <a href="mailto:info@humaniverzita.cz" style="margin:auto">info@humaniverzita.cz</a>
-            </div>
-
-
-        </footer>
-    </div>
-
+    <div id="includeFooter"></div>
 </div>
-
-
-
-
-
 </body>
 </html>

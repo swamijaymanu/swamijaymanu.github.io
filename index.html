@@ -1,143 +1,201 @@
 <!DOCTYPE html>
+<!-- saved from url=(0028)http://aum.humaniverzita.cz/ -->
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktivní společenské meditace - Humaniverzita v ČR</title>
 
-    <link rel="stylesheet" type="text/css" href="./src/css.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Společenské meditace - Humaniverzita v ČR</title>
+    <link href="./src/css.css" rel="stylesheet">
+
     <script src="./src/modernizr"></script>
 
-    <script src="./src/jquery"></script>
-
-    <script src="./src/bootstrap"></script>
-    
-
     <style>
+        a {
+            color: #fe8c16;
+        }
+        a:hover {
+            color: #bf1a2c;
+        }
+        button.mybtn{
+            color: white;
+            background-color: #fe8c16;
+            border-color: #ee8c16;
+        }
+        button.mybtn:hover{
+            color: white;
+            background-color: #ffac26;
+            border-color: #ffac26;
+        }
         h1,
         h2,
         h3 {
-          margin-top: 31px;
-          margin-bottom: 15px;
-}
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size:32px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        h3 {
+            font-size: 18px;
+        }
         p.bold {
             font-weight: bold;
         }
-        .nav .nav-divider {
-          background-color: #464646
+        p.citation {
+            font-style: italic;
         }
-        img {
-                padding: 11px;
-                display: block;
-                float:left;
+        .nav .nav-divider {
+            background-color: #464646
+        }
+        img.personal-photo {
+            padding: 0px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            display: block;
+            float:right;
         }
         .center-cropped {
-          background-position: center center;
-          background-repeat: no-repeat;
-          overflow: hidden;
+            background-position: center center;
+            background-repeat: no-repeat;
+            overflow: hidden;
         }
         .basic-text-padding {
-          padding: 12px;
+            padding: 7px;
         }
+
+        .flex-footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content:center;
+            align-self: center;
+        }
+        body {
+            color: #330103;
+        }
+        .letter-colored {
+            color: #c01c2d;
+        }
+
     </style>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container" style="max-width:710px">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                  
-                Aktivní společenské meditace</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/aum">AUM meditace</a></li>
-                    <li><a href="h/flushing">Flushing</a></li>
-                    <li class="nav-divider"> </li>
+<div class="navbar navbar-inverse navbar-fixed-top" style="max-width:700px; align-self:center; margin:auto">
+    <div class="container" style="max-width:700px">
+        <div class="navbar-header" style="margin-left:2px">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://aum.humaniverzita.cz/">
 
-                    <li></li>
-                    <li><a href="/about">O nás</a></li>
-                </ul>
-            </div>
+                Společenské meditace</a>
         </div>
-    </div>
-    <div class="container body-content" style="padding:0">
-        <div style="max-width:700px; width:auto; margin:0 auto">
-            
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="http://aum.humaniverzita.cz/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Meditace <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://aum.humaniverzita.cz/aum">AUM meditace</a></li>
+                        <li><a href="http://aum.humaniverzita.cz/flushing">Flushing</a></li>
 
+                    </ul>
+                </li>
+                <li><a href="http://aum.humaniverzita.cz/actions">Akce</a></li>
 
-<img style="align-self:center; margin:0px; float:none; padding:0px; overflow: hidden; width:703px; padding-top:7px; padding-bottom:13px" src="./src/obr.jpg">
+                <li class="nav-divider"> </li>
 
-<div class="basic-text-padding">
-
-    <p>
-        Jsme dva nejlepší kamarádi, kteří se rozhodli šířit a přivádět k&nbsp;lidem aktivní společenské meditace.
-        Věříme, že meditace může být zábavná a společenská a přitom učit lidi vnímat sami sebe. Hlavním
-        cílem naší práce je pomáhat lidem žít vědomě a v lásce. <a href="http://aumhumaniverzita.azurewebsites.net/about">Více o nás »</a>
-
-    </p>
-
-
-
-    <h3 class="post-title">Nejbližší akce</h3>
-
-
-    <h4>Flushing - <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScLzZDaYFZD_hgGGWgdU2LEBiwb7b8utNqOBvWHoCxd4NHK_A/viewform">přihlásit se</a></h4>
-
-    
-    
-
-    <div class="entry clearfix">
-        <p>
-            <strong>Kdy:</strong><br>
-            středa 16.11.2016<br>18:00 - 21:00
-        </p>
-
-        <p>
-            <strong>Kde:</strong><br>
-            Praha (bude upřesněno)
-        </p>
-
-        <p><span style="color: #222222;"><strong>Cena:</strong> 500Kč, studenti 400Kč.</span></p>
-    </div>
-
-
-    <h4>AUM meditace - <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdIraZk5XUZr_aArlcseeiZ6dBXswNpOEfl-w65aJsZgCQpZQ/viewform">přihlásit se</a></h4>
-
-    <div class="entry clearfix">
-        <p>
-            <strong>Kdy:</strong><br>
-            sobota 26.11.2016<br>16:00 - 19:00
-        </p>
-
-        <p>
-            <strong>Kde:</strong><br>
-            Praha (bude upřesněno)
-        </p>
-
-        <p><span style="color: #222222;"><strong>Cena:</strong> 500Kč, studenti 400Kč.</span></p>
-
-    </div>
-
-
-    <div style="margin-top: 20px">
-        <span style="color: #222222">
-            Dotazy posílejte na <a href="mailto:info@humaniverzita.cz">info@humaniverzita.cz</a> nebo volejte na 775&nbsp;326&nbsp;070 <a href="http://aumhumaniverzita.azurewebsites.net/About">Matějovi</a>
-            či na 774&nbsp;672&nbsp;131 <a href="http://aumhumaniverzita.azurewebsites.net/About">Manuovi</a>.
-        </span>
+                <li><a href="http://aum.humaniverzita.cz/about">O nás</a></li>
+            </ul>
+        </div>
     </div>
 </div>
-            <hr>
-            <footer>
-                
-            </footer>
+<div class="container body-content" style="padding:0">
+    <div style="max-width:700px; width:auto; margin:0 auto">
+
+
+        <div style="width:100%; max-width:700px; overflow:hidden">
+            <img style="align-self:center; margin:0px; float:none; max-width:700px; padding:0px; padding-top:0px; padding-bottom:0px" src="./Společenské meditace - Humaniverzita v ČR_files/party.png">
         </div>
-        
+
+
+        <div class="basic-text-padding">
+
+            <div style="text-align:center">
+                <h1>Společenské meditace</h1>
+                <h3 style="margin-top:-7px; margin-bottom:20px">aktivní meditace se&nbsp;společenským&nbsp;rozměrem</h3>
+            </div>
+
+
+
+
+
+
+
+
+
+            <p style="padding-bottom:10px">
+
+
+                Meditace je způsob, jak se dostat do přítomnosti s&nbsp;plným vědomím.
+                Při společenských meditacích se setkáváme s&nbsp;druhými, tančíme a&nbsp;vyjadřujeme se.
+                Tyto aktivity vyživují naše tělo i&nbsp;mysl a&nbsp;přirozeně nás vedou do prostoru klidu a&nbsp;meditace.
+
+            </p>
+            <p style="padding-bottom:10px">
+
+
+                Rozhodli jsme se šířit a&nbsp;přivádět k&nbsp;lidem aktivní společenské meditace.
+                Věříme, že meditace může být zábavná a&nbsp;přitom učit lidi vnímat sami sebe. Hlavním
+                cílem naší práce je pomáhat lidem žít vědomě a&nbsp;v&nbsp;lásce. <a href="http://aum.humaniverzita.cz/about">Více o nás »</a>
+
+            </p>
+
+
+
+
+            <div style="text-align:center">
+                <button type="button" onclick="location.href=&#39;./actions&#39;;" class="btn btn-warning mybtn">
+                    <h4 style="padding:5px; margin:5px">nejbližší akce</h4>
+                </button>
+            </div>
+
+
+
+        </div>
+
+        <hr>
+        <footer>
+
+
+            <div class="flex-footer-container" style="margin:auto; max-width:290px; margin-top:-12px">
+                <div style="align-self:center; margin:auto; padding-left:10px; padding-right:10px">
+                    Manu&nbsp;-&nbsp;774&nbsp;672&nbsp;131
+                </div>
+                <div style="align-self:center; margin:auto; padding-left:10px; padding-right:10px">
+                    Matěj&nbsp;-&nbsp;775&nbsp;326&nbsp;070
+                </div>
+            </div>
+            <div class="flex-footer-container" style="margin:auto">
+                <a href="mailto:info@humaniverzita.cz" style="margin:auto">info@humaniverzita.cz</a>
+            </div>
+
+
+        </footer>
     </div>
 
-</body></html>
+</div>
+
+<script src="./src/jquery"></script>
+
+<script src="./src/bootstrap"></script>
+
+
+
+
+</body>
+</html>
